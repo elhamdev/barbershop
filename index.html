@@ -218,17 +218,123 @@
         <p>
             Укажите желаемую дату и мы с вами свяжемся. 
         </p>
-        <form class="appointment-form" method="post" action="htt://echo/htmlacademy.ru"></form>
-        <label for="appointment-date">Дата</label>
-        <input type="text" id="appointment-date" placeholder="01.01.2020" name="appointment-date">
+        <form class="appointment-form" method="post" action="htt://echo/htmlacademy.ru">
+        <p class="appointment-form-date">
+            <span class="form-label form-label-icon">
+            <label for="appointment-date">
+                Дата
+            </label>
+            <button class="info" type="button">
+            <span class="visually-hidden">
+                Дополнительная информация
+            </span>
+        </button>
+        </span>
+        <input type="text" id="appointment-date" placeholder="01.01.2020" name="appointment-time">
+        </p>
+        <p class="appointment-form-time">
+            <span class="form-label form-label-icon">
+            <label for="appointment-time">
+                Время
+            </label>
+            <button class="info" type="button">
+                <span class="visually-hidden">
+                    Дополнительная информация
+                </span>
+            </button>
+            </span>
+            <input type="text" id="appointment-time" placeholder="10:00" name="appointment-phone">
+            </p>
+            <p class="appointment-form-phone">
+                <span class="form-label form-label-icon">
+                <label for="appointment-phone">
+                    Телефон
+                </label>
+                </span>
+                <input type="text" id="appointment-phone" placeholder="8-999-99-99-99" name="appointment-phone">
+                </p>
+                <p class="appointment-form-name">
+                    <span class="form-label form-label-icon">
+                    <label for="appointment-name">
+                        Ваше имя
+                    </label>
+                    </span>
+                    <input type="text" id="appointment-name" placeholder="Ваше имя" name="appointment-name">
+                    </p>
         <button class="button" type="submit">
             Записаться
         </button>
+        </form>
     </section>
 
     <!-- Подвал сайта -->
-    <footer>
-
+    <footer class="page-footer">
+        <section class="footer-contacts">
+            <h2 class="visually-hidden">
+                Контакты
+            </h2>
+            <img class="footer-contacts-logo" src="" alt="логотип барбершопа">
+            <address class="footer-contacts-address">
+                <p class="about-text">
+                    Санкт-Петербург, набережная Карповки 5
+                </p>
+                <a href="tel:8-999-99-99-99"  class="footer-contacts-address-phone">
+                    8-999-99-99-99
+                </a>
+            </address>
+            <a class="footer-contacts-map-link" href="#">
+                Как нас найти
+            </a>
+        </section>
+        <section class="newsletter">
+            <h2 class="visually-hidden">
+                Рассылка email
+            </h2>
+            <form method="post" action="https://echo.htmlacademy.ru/">
+                <p class="newsletter-email">
+                    <label class="visually-hidden" for="newsletter-email">
+                        Email
+                    </label>
+                    <input required id="newsletter-email" type="email" placeholder="email@example.ru" class="field">
+                </p>
+                <button type="submit" class="button newsletter-button">
+                    <span class="visually-hidden">
+                        Отправить
+                    </span>
+                </button>
+            </form>
+        </section>
+        <section class="footer-social">
+            <h2 class="visually-hidden">
+                Социальные сети
+            </h2>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a href="#" class="button">
+                        <span class="visually-hidden">
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#" class="button">
+                        <span class="visually-hidden">
+                            Вконтакте
+                        </span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#" class="button">
+                        <span class="visually-hidden">
+                            Инстаграм
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p class="about-text">
+                Сделано в <a href="https://htmlacademy.ru" class="htmlacademy-link">htmlacademy</a>
+            </p>
+        </section>
     </footer>
 </body>
 </html>
